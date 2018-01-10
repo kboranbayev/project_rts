@@ -33,9 +33,9 @@
   {
     $_SESSION['loggedin'] = $username;
 		header("Location: ../../index.php?msg=loginsuccess");
-		die();
   }
   else {
-    echo "The details are not found.";
+		header("Location: ../../index.php?msg=loginfail");
   }
+	die();
 ?>
