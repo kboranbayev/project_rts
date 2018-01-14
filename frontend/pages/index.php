@@ -27,17 +27,18 @@
 	<body>
 		<?php require_once("frontend/templates/header.php"); ?>
 		<div class="panel panel-heading">
-			<?php
-			// Message
-			require_once("frontend/templates/messages/login-message.php");
-			?>
+			<!-- Panel Message -->
+			<?php require_once("frontend/templates/messages/login-message.php");?>
 		</div>
-
-			<div class="container-fluid">
-						<h1>Home</h1>
-						<p>This is the homepage</p>
-			</div>
+		<!-- Body Content Header -->
+		<div class="container-fluid">
+					<h1>Home</h1>
+					<p>This is the homepage</p>
+			<!-- Body Content -->
+			<?php require_once("frontend/templates/content.php"); ?>
+			<!-- Footer -->
 			<?php require_once("frontend/templates/footer.php"); ?>
+		</div>
 
 	</body>
 </html>
